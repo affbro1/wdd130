@@ -1,0 +1,70 @@
+body{
+    display:grid; 
+    grid-template-columns: 1fr, 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    border: 3px solid;
+}
+
+h1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    margin-right: 100px;
+
+}
+
+p{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    margin-right: 100px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.emailnav{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-right: 100px;
+    justify-self: center;
+
+}
+
+.namenav{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin-right: 100px;
+    justify-self: center;
+}
+
+.opt{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+button{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    width: 200px;
+    height: 50px;
+    justify-self: center;
+    margin-right: 100px;
+    color: white;
+    background-color: orange;
+    border-radius: 12px;
+}
+
+#cr{
+    grid-row: 1/1;
+    grid-column: 3/4;
+    justify-self: right;
+    margin: 100px;
+    align-self: top;
+
+
+}
