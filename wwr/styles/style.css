@@ -251,6 +251,47 @@ nav{
 }
 
 
+/*Subpage starts here*/
+
+.toplayer{
+    display: grid;
+    grid-template-columns: (repeat(7, 1fr));
+}
+
+.droneimage{
+    grid-column: 1/2;
+}
+.DD{
+    grid-column: 2/3;
+}
+
+.Drates{
+    grid-column: 3/4;
+}
+
+.tom{
+    grid-column: 5/6;
+}
+
+.Tomt{
+    grid-column: 3/4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
