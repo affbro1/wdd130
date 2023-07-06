@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTG Deck Genie</title>
-    <link type="text/css" rel="stylesheet" href="mtgstyles/site-plan.css">
+    <link type="text/css" rel="stylesheet" href="mtgstyles/home.css">
 </head>
 
 
 <body>
     <header>
-        <a>Login/Signup</a>
         <h1>MTG: Deck Genie</h1>
         <a href="trading.html">Trading</a>
         <a href="index.html">Home</a>
@@ -19,20 +18,60 @@
     </header>
 
     <Main>
-        <img src="MTG_ Deck Genie-1.png" alt="logo"  height="100px" width="100px">
+        <img src="MTG_ Deck Genie-1.png" alt="logo"  height="200px" width="200px">
         <p>Welcome to MTG Deck Genie! The premeire site to find the best decks and strategies to play your favorite cards.
             We do all of the searching and scouring for you so you can spend more time playing the game. Simply select your format and input your favorite pet card. We'll find so many options for your favorite cards you'll swear it's magic!</p>
     </Main>
 
-    <div class="Card selection">
-        <p>Card selection options. Drop down menues. Search bar for card input</p>
-        <p>Space for card to appear to ensure correct selection</p>
-        <button type="button">Generate!</button>
-    </div>
 
-    <div class="result">
-        <p>Generation results along with keywords</p>
+    <div class="main2">
+        
+        
+        <div class="formatdiv">
+
+        <label  for="format">Choose a Format:</label> 
+    <select id="format" name="format"> 
+        <option value="commander/edh">Commander/EDH</option> 
+        <option value="standard">Standard</option> 
+        <option value="modern">Modern</option> 
+        <option value="brawl">Brawl</option> 
+        <option value="planechase">Planechase</option> 
+        <option value="pauper">Pauper</option> 
+    </select>
+        </div>
+
+        <div class="stratdiv">
+        <label for="strat">Choose a Strategy:</label> 
+    <select class="strat" name="strat" id="strat"> 
+        <option value="aggro">Aggro</option> 
+        <option value="control">Control</option> 
+        <option value="combo">Combo</option> 
+        <option value="midrange">Midrange</option> 
+    </select>
     </div>
+    
+
+        <div class="formdiv">
+    <form id="form"> 
+        <input type="search" id="cardsearch" name="q" placeholder="Card Name">
+        <button>Search</button>
+      </form>
+      <form id="form"> 
+        <input type="search" id="versionsearch" name="q" placeholder="Version?">
+        <button>Search</button>
+    </form>
+        </div>
+
+    <p class="generatediv">Shake the Lamp to Generate!</p>
+    
+    
+    <div class="cardbox"> Your card here!</div>
+
+    <img class="lamp" src="black and white magic-lamp.png">
+    
+
+</div>
+
 
     <footer>
         <p> MTG Deck Genie &copy; 2023 - Victor Affleck</p>
