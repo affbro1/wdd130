@@ -40,7 +40,7 @@ main{
 }
 
 .logo{
-    height: 300px;
+    height: 250px;
     width: 200px;
     grid-column: 1/2;
 }
