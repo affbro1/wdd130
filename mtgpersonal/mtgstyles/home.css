@@ -29,10 +29,10 @@ Fonts are separated by a | */
 }
 
 
+/* Homepage CSS  */
 
-h1{
-    color: black
-}
+
+
 
 main{
     display: grid;
@@ -121,18 +121,38 @@ main{
 }
 
 
+/* Vault CSS  */
 
 
+.vaultmain{
+  display:grid; 
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  
+}
 
+.vaultdeckdetails{
+  border: solid 20px black
 
+}
 
+/*
+.vaultdecklist{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
 
+.vaultdname{
+grid-column: 1/2;
+grid-row: 1/2;
+}
 
-
-
-
-
-
+.vaultdeckdetails{
+grid-column: 2/3;
+grid-row: 1/2;
+}
+ */
 
 
 body {
@@ -165,7 +185,7 @@ header {
   background-color: var(--paragraph-background-color);
 }
 header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+  color: black;
 }
 
 p {
